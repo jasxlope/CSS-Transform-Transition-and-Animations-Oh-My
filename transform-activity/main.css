@@ -8,12 +8,24 @@ main {
   height: 90vh;
   width: 100vh;
   margin: auto;
-  display: flex;
+  display: inline-block;
   align-items: center;
+
 }
 
+
 main > div {
-  width: 40%;
-  margin: auto;
+  width: 300%;
+  margin: 0 auto;
   padding: 10%;
+}
+
+main {
+  transform: skew(0deg, -10deg);
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 325px;
 }

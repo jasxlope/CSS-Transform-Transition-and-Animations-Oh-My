@@ -27,17 +27,39 @@ nav {
   opacity: 1;
 }
 
-@keyframes top {
-  from {}
-  to {}
+
+/* Add these styles to complete the requirements */
+
+.hamburger:hover #middle {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-@keyframes middle {
-  from {}
-  to {}
+/* Rotate transformations to create an 'X' shape */
+@keyframes rotate-top {
+  from {
+    transform: rotate(0deg) translateY(0);
+  }
+
+  to {
+    transform: rotate(-45deg) translateY(-5px);
+  }
 }
 
-@keyframes bottom {
-  from {}
-  to {}
+@keyframes rotate-bottom {
+  from {
+    transform: rotate(0deg) translateY(0);
+  }
+
+  to {
+    transform: rotate(45deg) translateY(5px);
+  }
+}
+
+.hamburger:hover #top {
+  animation: rotate-top 0.5s forwards;
+}
+
+.hamburger:hover #bottom {
+  animation: rotate-bottom 0.5s forwards;
 }
